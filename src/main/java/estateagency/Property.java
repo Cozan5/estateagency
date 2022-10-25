@@ -4,6 +4,8 @@
  */
 package estateagency;
 
+import java.io.IOException;
+
 /**
  *
  * @author franm
@@ -153,6 +155,18 @@ public class Property extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        sqlFunctions sqlf = new sqlFunctions();
+        try
+        {
+            String status=(String)jComboBox1.getSelectedItem();
+            int roomsno =Integer.parseInt(jTextField3.getText());
+            sqlf.addProperty(jTextField1.getText(), jTextField2.getText(), jTextField3.getText(),roomsno ,status);
+        }
+        catch(IOException ex)
+        {
+            System.out.println();
+        }
+       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

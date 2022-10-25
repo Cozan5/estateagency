@@ -94,6 +94,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Check Availability"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
@@ -113,7 +116,7 @@
         <Component class="javax.swing.JTable" name="jTable1">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="2" rowCount="10">
+              <Table columnCount="2" rowCount="0">
                 <Column editable="true" title="PropertyAddress" type="java.lang.Object"/>
                 <Column editable="true" title="Views" type="java.lang.Object"/>
               </Table>
